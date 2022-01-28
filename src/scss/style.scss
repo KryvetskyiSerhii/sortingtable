@@ -1,0 +1,68 @@
+@import "resset.scss";
+
+//$black: #000000;
+//$orange: #FF6336;
+
+// @mixin regular() {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 400;
+// }
+
+// @mixin semiBold() {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 600;
+// }
+
+@import "400-575.scss";
+@import "576-767.scss";
+@import "768-991.scss";
+@import "992-1199.scss";
+
+
+body {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+table {
+    margin: 100px auto;
+    font-size: 18px; 
+    text-align: left;
+    
+    th {
+        font-weight: 600;
+        background: lightblue;
+    }
+
+    td {
+        width: 150px;
+  }
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.table-sort th {
+    cursor: pointer;
+}
+
+.table-sort .th-sort-asc::after {
+    content: "\2191";
+}
+
+.table-sort .th-sort-desc::after {
+    content: "\2193";
+}
+
+.table-sort .th-sort-asc::after,
+.table-sort .th-sort-desc::after {
+    margin-left: 5px;
+}
+
+.table-sort .th-sort-asc,
+.table-sort .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+} 
